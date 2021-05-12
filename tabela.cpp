@@ -130,7 +130,7 @@ void Table::positioning(){
                 }
 
             if(tab[i].points==tab[j].points){
-                if(tab[i].goals_scored<tab[j].goals_scored){
+                if(tab[i].goals_scored-tab[i].goals_loses<tab[j].goals_scored-tab[j].goals_loses){
                  swap(tab[i],tab[j]);
                 swap(tab[i].position,tab[j].position);
                 }
